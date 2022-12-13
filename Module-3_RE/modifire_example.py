@@ -1,0 +1,27 @@
+import re
+
+mystr="Hello Python!456"
+
+#x=re.findall('[A-Z]',mystr)
+#x=re.findall('[a-z]',mystr)
+#x=re.findall('[0-9]',mystr)
+#x=re.findall('[A-Za-z]',mystr)
+#x=re.findall('[A-Za-z0-9]',mystr)
+#x=re.findall('^Hello',mystr)
+#x=re.findall('^[A-Z]',mystr)
+#x=re.findall('[^a-z]',mystr)
+#x=re.findall('56$',mystr)
+#x=re.findall('\w',mystr)
+#x=re.findall('\W',mystr)
+#x=re.findall('\d',mystr)
+#x=re.findall('\D',mystr)
+#x=re.findall('\s',mystr)
+#x=re.findall('\S',mystr)
+#x=re.findall(r'\bHello',mystr)
+#x=re.findall('\B56',mystr)
+#x=re.findall('\AHello',mystr)
+#x=re.findall('46\Z',mystr)
+#x=re.findall('Py...on',mystr)
+#x=re.findall('Hello|Hi',mystr)
+x=re.findall('[A-Z]|[a-z]',mystr)
+print(x)

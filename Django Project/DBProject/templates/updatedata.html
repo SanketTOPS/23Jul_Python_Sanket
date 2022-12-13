@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Data</title>
+</head>
+<body bgcolor="lightblue">
+    <center><h1>Update User Data</h1></center>
+    <hr>
+    <h3><u>Update!</u></h3>
+
+    <form method="post">
+        {% csrf_token %}
+        <input type="text" placeholder="Name" name="name" value="{{user.name}}"><br><br>
+        <input type="email" placeholder="Email" name="email" value="{{user.email}}"><br><br>
+        <input type="password" placeholder="Password" name="password" value="{{user.password}}"><br><br>
+        <input type="number" placeholder="Mobile" name="mobile" value="{{user.mobile}}"><br><br>
+        <textarea placeholder="Address" name="address" hidden></textarea><br><br>
+        <input type="submit" value="Update">
+    </form>
+    <hr>
+    <a href="/showdata">Showdata</a>
+</body>
+</html>
